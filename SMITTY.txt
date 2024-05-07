@@ -1,0 +1,33 @@
+The SMIT (System Management Interface Tool)
+The SMIT is an AIX-specific configuration tool. Most of the command line operations can be
+performed with the SMIT, without having to know what command to use and what parameters to use
+with that command.
+
+smitty  or smit -C
+
+Enter = Select Menu Item or Submit 
+Escape + 3  -> back one level 
+Escape + 4  -> Field list option ( if has list )
+Escape + 5  -> clear the field 
+Escape + 6  -> Command review ( good for scripting )( show what command has been executed or go to smit.script file )
+Escape + 8  -> fastpath name 
+Escape + 9  -> start Shell , Run command then CTRL+D to return to smitty  ( type exit ) 
+Escape + 0  -> Exit Completely 
+
+[ ]               ->  Indicates that you can enter the selected values in this field.
+< or >        ->  Indicates that the left or right side contains text that does not fit on the screen. You can access it using the arrow keys.
+*                 -> Indicates that the field is required.
++                ->  Indicates that a field selection list is available. To view the list, press the F4 key.
+#                ->  Indicates that the field is numeric.
+x                -> Indicates that the field requires a hexadecimal value.
+
+Remember when your run the command and get Success or Failed , you need to run Esc + 0 to exit 
+
+
+
+The smit.log file stores all the actions that the user performed while on the SMIT menu 
+
+$HOME/smit.script
+$HOME/smit.log
+
+
